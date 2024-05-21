@@ -45,7 +45,7 @@ Example:
 ```sh
 python plot_tornado.py "path_to_file.csv" 3
 ```
-
+![alt text](https://github.com/ffreider/cost_estimation/blob/main/example_img/example_pdf_cdf_biosat.png?raw=true)
 ## Contact Information
 For any questions or suggestions, please contact freider.floan@gmail.com
 
