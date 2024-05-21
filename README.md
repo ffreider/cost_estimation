@@ -36,6 +36,8 @@ Example:
 ```sh
 python plot_pdf_and_cdf.py 1000000 150000
 ```
+![alt text](https://github.com/ffreider/cost_estimation/blob/main/example_img/example_tornado_level_2_biosat.png?raw=true)
+
 ### 2. Tornado Diagram Visualization
 To run the script:
 ```sh
@@ -43,9 +45,10 @@ python plot_tornado.py <file_path> <level>
 ```
 Example:
 ```sh
-python plot_tornado.py "path_to_file.csv" 3
+python plot_tornado.py "path_to_file.csv" 2
 ```
 ![alt text](https://github.com/ffreider/cost_estimation/blob/main/example_img/example_pdf_cdf_biosat.png?raw=true)
+
 ## Contact Information
 For any questions or suggestions, please contact freider.floan@gmail.com
 
