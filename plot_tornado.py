@@ -18,7 +18,7 @@ def plot_tornado_diagram(cleaned_data):
     cleaned_data['Lower Deviation (NOK)'] = cleaned_data['Expected Value (NOK)'] - cleaned_data['P10 (NOK)']
     cleaned_data['Upper Deviation (NOK)'] = cleaned_data['P90 (NOK)'] - cleaned_data['Expected Value (NOK)']
     cleaned_data['Total Deviation (NOK)'] = cleaned_data['Lower Deviation (NOK)'] + cleaned_data['Upper Deviation (NOK)']
-    sorted_data = cleaned_data.sort_values(by='Total Deviation (NOK)', ascending=False)
+    sorted_data = cleaned_data.sort_values(by='Total Deviation (NOK)', ascending=True)
     plt.style.use('seaborn-whitegrid')
     fig, ax = plt.subplots(figsize=(12, 10))
     for index, row in sorted_data.iterrows():
@@ -29,7 +29,7 @@ def plot_tornado_diagram(cleaned_data):
     ax.axvline(x=0, color='grey', linestyle='--')
     ax.set_xlabel('Deviation from Expected Value (NOK)', fontsize=14)
     ax.set_ylabel('WBS Name', fontsize=14)
-    ax.set_title('Tornado Diagram of Cost Estimates (Centered on Expected Value)', fontsize=16, weight='bold')
+    ax.set_title('Tornado Diagram of Cost Estimates', fontsize=16, weight='bold')
     plt.tight_layout()
     ax.tick_params(axis='both', which='major', labelsize=12)
     ax.grid(True, linestyle='--', alpha=0.7, axis='x')
