@@ -2,9 +2,16 @@
 
 This repository contains two scripts for visualizing cost distributions and tornado diagrams. The first script generates PDF and CDF plots based on expected value and standard deviation. The second script cleans WBS data and plots a tornado diagram.
 
-Example csv file from the BioSat satellite project in Orbit NTNU: https://docs.google.com/spreadsheets/d/1yTV-oQwlPQQAkIKiMaMXk4J_56CKUK3r6yJO3o5KUvE/edit#gid=1507483010
+Example cost estimation csv file from the BioSat satellite project in Orbit NTNU: https://docs.google.com/spreadsheets/d/1yTV-oQwlPQQAkIKiMaMXk4J_56CKUK3r6yJO3o5KUvE/edit#gid=1507483010
 
-## Requirements
+## Setup
+
+### Clone the repository
+```sh
+git clone https://github.com/ffreider/cost_estimation.git
+cd cost_estimation
+```
+### Requirements
 
 - Python 3.x
 - numpy
@@ -38,4 +45,7 @@ Example:
 ```sh
 python plot_tornado.py "path_to_file.csv" 3
 ```
+
+## Contact Information
+For any questions or suggestions, please contact freider.floan@gmail.com
 
