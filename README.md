@@ -21,11 +21,11 @@ pip install -r requirements.txt
 ### 1. Cost Distribution Visualization
 To run the script:
 ```sh
-sh python plot_pdf_and_cdf.py <expected_value> <std_deviation>
+python plot_pdf_and_cdf.py <expected_value> <std_deviation>
 ```
 Example:
 ```sh
-sh python plot_pdf_and_cdf.py 1000000 150000
+python plot_pdf_and_cdf.py 1000000 150000
 ```
 ### 2. Tornado Diagram Visualization
 To run the script:
