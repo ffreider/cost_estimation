@@ -7,7 +7,7 @@ def plot_cost_distribution(expected_value, std_deviation):
     p10 = norm.ppf(0.10, loc=expected_value, scale=std_deviation)
     p50 = norm.ppf(0.50, loc=expected_value, scale=std_deviation)
     p90 = norm.ppf(0.90, loc=expected_value, scale=std_deviation)
-    p99 = norm.ppf(0.999999, loc=expected_value, scale=std_deviation)
+    p99 = norm.ppf(0.99, loc=expected_value, scale=std_deviation)
     x = np.linspace(expected_value - 3 * std_deviation, expected_value + 3 * std_deviation, 1000)
     pdf = norm.pdf(x, loc=expected_value, scale=std_deviation)
     cdf = norm.cdf(x, loc=expected_value, scale=std_deviation)
